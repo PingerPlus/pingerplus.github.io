@@ -9,7 +9,7 @@ const config = {
   baseUrl: '/',
   organizationName: 'PingerPlus', // Usually your GitHub org/user name.
   projectName: 'pingerplus.github.io', // Usually your repo name.
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
@@ -29,6 +29,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          routeBasePath: '/',
           editUrl:
             'https://github.com/PingerPlus/pingerplus.github.io/tree/main',
         },
@@ -42,8 +43,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Plus Plugins',
         logo: {

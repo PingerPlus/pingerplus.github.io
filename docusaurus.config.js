@@ -48,6 +48,7 @@ const config = {
         logo: {
           alt: 'Pinger Logo',
           src: 'img/logo.svg',
+          srcDark: 'img/logo_dark.svg',
         },
         items: [
           {

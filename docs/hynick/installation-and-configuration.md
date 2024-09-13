@@ -28,7 +28,7 @@ This file contains all messages sent to the player by message (not in books). <b
 You can edit each of these messages, where you should only not remove `%s` because that is a parameter that will later on be set to a value depending on the message. For example, in the `'&aSet your nick rank to %s&a!'` message the `%s` will get set to whatever the rank name is that the player chooses.
 
 You can see the current contents of the messages.yml file below:
-```yml title = "messages.yml"
+```yml title="messages.yml"
 rank:
   set: '&aSet your nick rank to %s&a!'
 nick:
@@ -51,7 +51,7 @@ Editing anything else might cause issues with the plugin, since the pages are ov
 If you for some reason do get an error after you've edited this file, you can revert to the old file by restarting your server and deleting the file.
 
 Down below is an example of the first page generated inside the `pages.json` file:
-```json
+```json title="pages.json"
 [
   {
     "1": {
@@ -91,7 +91,7 @@ All players who can access the `/nick` **must have permission for at least 1 ran
 
 By default (from the Hypixel model), there are 5 ranks: **default, vip, vip+, mvp, mvp+**:
 
-```yml
+```yml title="ranks.yml"
 default:
   permission: ""
   name: "&7DEFAULT"
